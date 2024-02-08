@@ -1,7 +1,7 @@
 import 'dart:async';
 
 import 'package:chat_gpt_flutter/chat_gpt_flutter.dart';
-import 'package:chatgpt/api_key.dart';
+//import 'package:chatgpt/api_key.dart';
 import 'package:chatgpt/model/question_answer.dart';
 import 'package:chatgpt/theme.dart';
 import 'package:chatgpt/view/components/chatgpt_answer_widget.dart';
@@ -31,7 +31,8 @@ class _ChatScreenState extends State<ChatScreen> {
   void initState() {
     inputQuestionController = TextEditingController();
     scrollController = ScrollController();
-    chatGpt = ChatGpt(apiKey: openAIApiKey);
+    chatGpt =
+        ChatGpt(apiKey: "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");
     super.initState();
   }
 
